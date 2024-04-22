@@ -1,0 +1,8 @@
+creating 3 tables in a database 
+ step1 : creating new database : CREATE DATABASE manik
+ step2 : connecting with db : \c manik
+ step3 : Creating a new table in db manik : CREATE TABLE user (userid SERIAL PRIAMYKEY , username  VARCHAR(50) UNIQUE NOT NULL ....) 
+ step4 : same for 2 more table 
+ step5 : updating username : UPDATE user SET username = 'manny' WHERE id = 1 
+ step6 : deleting table : DROP user
+   
