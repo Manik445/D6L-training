@@ -7,6 +7,7 @@ import Taskk from './components/Taskk';
 import Task2 from './components/Task2';
 import Person from './components/task1/Person';
 import Greetings from './components/task1/Greetings';
+import Form from './components/task2/Form';
 
 function App() {
   return (
@@ -26,7 +27,12 @@ function App() {
 
       {/* task incudes in task1 folder in Person folder  */}
       {/* <Person name="Manik"/> */}  
-      <Greetings />
+      {/* <Greetings /> */}
+
+
+      {/* taks2 : Form  */}
+
+      <Form/>   
 
     </div>
   );
