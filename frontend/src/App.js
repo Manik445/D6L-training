@@ -5,6 +5,8 @@ import Third from './components/Third';
 import Fourth from './components/Fourth';
 import Taskk from './components/Taskk';
 import Task2 from './components/Task2';
+import Person from './components/task1/Person';
+import Greetings from './components/task1/Greetings';
 
 function App() {
   return (
@@ -20,7 +22,12 @@ function App() {
       {/* <Taskk/>  */}
 
     {/* dark Mode Feature  */}
-      <Task2/>
+      {/* <Task2/> */}
+
+      {/* task incudes in task1 folder in Person folder  */}
+      {/* <Person name="Manik"/> */}  
+      <Greetings />
+
     </div>
   );
 }
