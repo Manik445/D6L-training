@@ -20,8 +20,14 @@ import Dashboard from './components/taks3/Dashboard';
 import Home from './components/taks3/Home';
 import Buttonnavigate from './components/taks3/Buttonnavigate';
 import About from './components/taks3/About';
+import { useContext } from 'react';
+import { CountConext } from './context/Countercontext';
+import Counter from './contextapi/Counter';
 
 function App() {
+  // task4 :   
+  const CounterState = useContext(CountConext); 
+  console.log(CounterState); 
   return (
     <div className="App">
       <First name="Manik Gupta" profession="Associate Software developer"/> 
@@ -62,17 +68,23 @@ function App() {
     </Router> */}
   
     {/* routes using usenavigate  */}
-    <Router>
+    {/* <Router>
       <Routes>
         <Route path="/" element={<Buttonnavigate />} />
         <Route path='/home' element={<Home/>} /> 
         <Route path='/about' element={<About/>} /> 
 
       </Routes>
-    </Router>
- 
-    
+    </Router> */}
 
+    {/* task4 : Assignment on Context API using Functional Component */}
+    
+    <h1>Count is : {CounterState.count} </h1>
+    <Counter/>
+    <Counter/>
+  
+ 
+  
 
     </div>
   );
