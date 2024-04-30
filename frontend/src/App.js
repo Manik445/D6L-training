@@ -24,6 +24,7 @@ import { useContext } from 'react';
 import { CountConext } from './context/Countercontext';
 import Counter from './contextapi/Counter';
 import UserForm from './materialui/Form';
+import Apitask from './components/Apitask';
 
 function App() {
   // task4 :   
@@ -80,13 +81,14 @@ function App() {
 
     {/* task4 : Assignment on Context API using Functional Component */}
     
-    <h1>Count is : {CounterState.count} </h1>
+    {/* <h1>Count is : {CounterState.count} </h1>
     <Counter/>
-    <Counter/>
+    <Counter/> */}
 
     {/* task6 : Assignment on Material UI */}
     {/* <UserForm/> */}
   
+    <Apitask/>
  
   
 
